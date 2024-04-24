@@ -1,10 +1,16 @@
 # Godot Scene Loader
 For Godot 4.2
 
-A scene loader with loading screen and progress bar.
+A scene loader with loading screen, progress bar, and error handling.
 
 [Example on itch.io](https://maaack.itch.io/godot-game-template)  
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
+
+
+![Main Menu](/addons/maaacks_scene_loader/media/Screenshot-1-1.png)  
+![Key Rebinding](/addons/maaacks_scene_loader/media/Screenshot-1-2.png)  
+![Audio Controls](/addons/maaacks_scene_loader/media/Screenshot-1-3.png)  
+![Credits Screen](/addons/maaacks_scene_loader/media/Screenshot-1-4.png)  
 
 ## Use Case
 For adding a loading screen with a progress bar in between your scene changes.
