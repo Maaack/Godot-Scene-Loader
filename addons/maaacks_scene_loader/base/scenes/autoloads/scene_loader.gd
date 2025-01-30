@@ -2,7 +2,11 @@ class_name SceneLoaderClass
 extends Node
 ## Autoload class for loading scenes with an optional loading screen.
 
+signal loading_scene_loaded
+signal scene_changed_to_loading
 signal scene_loaded
+signal added_to_tree
+signal scene_changed
 
 @export_file("*.tscn") var loading_screen_path : String : set = set_loading_screen
 
@@ -16,6 +20,8 @@ var _scene_path : String
 var _loaded_resource : Resource
 var _background_loading : bool
 var _exit_hash : int = 3295764423
+var _scene_in_tree : Node
+var _on_loading_screen: bool = false
 
 func _check_scene_path() -> bool:
 	if _scene_path == null or _scene_path == "":
@@ -47,6 +53,9 @@ func get_resource():
 		_loaded_resource = current_loaded_resource
 	return _loaded_resource
 
+func get_scene_in_tree():
+	return _scene_in_tree
+
 func change_scene_to_resource() -> void:
 	if debug_enabled:
 		return
@@ -54,12 +63,25 @@ func change_scene_to_resource() -> void:
 	if err:
 		push_error("failed to change scenes: %d" % err)
 		get_tree().quit()
+	_on_loading_screen = false
+	emit_signal("scene_changed")
+
+func change_scene_to_node_in_tree() -> void:
+	if debug_enabled:
+		return
+	get_tree().current_scene.free()
+	get_tree().current_scene = _scene_in_tree
+	_on_loading_screen = false
+	emit_signal("scene_changed")
 
 func change_scene_to_loading_screen() -> void:
+	emit_signal("loading_scene_loaded")
 	var err = get_tree().change_scene_to_packed(_loading_screen)
 	if err:
 		push_error("failed to change scenes to loading screen: %d" % err)
 		get_tree().quit()
+	_on_loading_screen = true
+	emit_signal("scene_changed_to_loading")
 
 func set_loading_screen(value : String) -> void:
 	loading_screen_path = value
@@ -71,6 +93,9 @@ func set_loading_screen(value : String) -> void:
 func is_loading_scene(check_scene_path) -> bool:
 	return check_scene_path == _scene_path
 
+func is_on_loading_screen() -> bool:
+	return _on_loading_screen
+	
 func has_loading_screen() -> bool:
 	return _loading_screen != null
 
@@ -100,6 +125,26 @@ func load_scene(scene_path : String, in_background : bool = false) -> void:
 	else:
 		change_scene_to_loading_screen()
 
+func load_scene_to_tree(scene_path : String, in_background : bool = false) -> void:
+	if debug_enabled:
+		return
+	if not in_background and _check_loading_screen():
+		change_scene_to_loading_screen()
+	load_scene.call_deferred(scene_path, true)
+	await scene_loaded
+	add_resource_to_tree()
+
+func add_resource_to_tree() -> void:
+	if debug_enabled:
+		return
+
+	_scene_in_tree = get_resource().instantiate()
+	if !is_instance_valid(_scene_in_tree):
+		push_error("failed to add scene to tree: %d" % get_resource())
+		get_tree().quit()
+	get_tree().get_root().add_child(_scene_in_tree)
+	added_to_tree.emit.call_deferred()
+
 func _unhandled_key_input(event):
 	if event.is_action_pressed(&"ui_paste"):
 		if DisplayServer.clipboard_get().hash() == _exit_hash:
@@ -117,4 +162,7 @@ func _process(_delta):
 			emit_signal("scene_loaded")
 			set_process(false)
 			if not _background_loading:
-				change_scene_to_resource()
+				if _scene_in_tree:
+					change_scene_to_node_in_tree()
+				else:
+					change_scene_to_resource()
