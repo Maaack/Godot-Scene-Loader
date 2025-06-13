@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cd0jbh4metflb"]
 
-[ext_resource type="Script" path="res://addons/maaacks_scene_loader/base/scenes/loading_screen/loading_screen.gd" id="1_gbk34"]
+[ext_resource type="Script" uid="uid://dgeewyjjpk4qn" path="res://addons/maaacks_scene_loader/base/scenes/loading_screen/loading_screen.gd" id="1_gbk34"]
 
 [node name="LoadingScreen" type="CanvasLayer"]
 process_mode = 3
@@ -21,14 +21,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="BackgroundColor" type="ColorRect" parent="Control"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.501961)
+color = Color(0, 0, 0, 0)
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
