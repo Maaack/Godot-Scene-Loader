@@ -7,19 +7,26 @@ A scene loader with loading screen, progress bar, and error handling.
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
 
 
-![Main Menu](/addons/maaacks_scene_loader/media/Screenshot-1-1.png)  
-![Key Rebinding](/addons/maaacks_scene_loader/media/Screenshot-1-2.png)  
-![Audio Controls](/addons/maaacks_scene_loader/media/Screenshot-1-3.png)  
-![Credits Screen](/addons/maaacks_scene_loader/media/Screenshot-1-4.png)  
+![Loading 33%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-1.png)  
+![Still Loading 69%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-3.png)  
+![Stalled Loaded 69%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-4.png)  
+[More Screenshots](/addons/maaacks_scene_loader/docs/Screenshots.md)  
 
-## Use Case
-For adding a loading screen with a progress bar in between your scene changes.
+## Objective
+
+For quickly adding a loading screen with a progress bar in-between your scene changes.
+
+[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users, especially those new to Godot.  
 
 ## Features
 
 * Asynchronous resource loading.
 * Loading screen with progress bar.
 * Error handling.
+
+### Extras or Components
+
+Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) or other options from the [plugin suite](/addons/maaacks_scene_loader/docs/PluginSuite.md).  
 
 
 ### How it Works
@@ -30,7 +37,7 @@ For adding a loading screen with a progress bar in between your scene changes.
 ### Godot Asset Library
 This package is available as a plugin, meaning it can be added to an existing project. 
 
-![Package Icon](/addons/maaacks_scene_loader/media/SceneLoader-Icon-black-transparent-256x256.png)  
+![Package Icon](/addons/maaacks_scene_loader/media/scene_loader-icon-black-transparent-256x256.png)  
 
 When editing an existing project:
 
@@ -53,9 +60,6 @@ When editing an existing project:
 4.  Open/Reload the project.  
 5.  Enable the plugin from the Project Settings > Plugins tab.  
 
-#### Extras
-
-Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template).  
 
 ## Usage
 
