@@ -1,5 +1,5 @@
 # Godot Scene Loader
-For Godot 4.2
+For Godot 4.4 (4.3+ compatible)
 
 A scene loader with loading screen, progress bar, and error handling.
 
@@ -64,10 +64,12 @@ When editing an existing project:
 ## Usage
 
 Change scenes in your project using paths by calling `SceneLoader.load_scene(_path_to_scene_)`.
-   
 
+### More Documentation
+
+[Automatic Updating](/addons/maaacks_scene_loader/docs/AutomaticUpdating.md)  
 
 ## Links
-[Attribution](ATTRIBUTION.md)  
-[License](LICENSE.txt)  
-
+[Attribution](/addons/maaacks_scene_loader/ATTRIBUTION.md)  
+[License](/addons/maaacks_scene_loader/LICENSE.txt)  
+[Godot Asset Library](https://godotengine.org/asset-library/asset/2896)  
