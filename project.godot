@@ -60,6 +60,10 @@ ui_page_down={
 ]
 }
 
+[maaacks_scene_loader]
+
+disable_update_check=false
+
 [physics]
 
 common/enable_pause_aware_picking=true
