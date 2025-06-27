@@ -69,6 +69,24 @@ Change scenes in your project using paths by calling `SceneLoader.load_scene(_pa
 
 [Automatic Updating](/addons/maaacks_scene_loader/docs/AutomaticUpdating.md)  
 
+---
+
+## Featured Games
+
+| Spud Customs | Rent Seek Kill  | A Darkness Like Gravity  |  
+| :-------:| :-------: | :-------: |
+![Spud Customs](/addons/maaacks_scene_loader/media/thumbnail-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_scene_loader/media/thumbnail-game-a-darkness-like-gravity.png)  |
+[Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |  [Play on itch.io](https://maaack.itch.io/a-darkness-like-gravity)  |
+
+
+[All Shared Games](/addons/maaacks_scene_loader/docs/GamesMade.md)  
+
+
+## Community
+
+Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
+ 
+
 ## Links
 [Attribution](/addons/maaacks_scene_loader/ATTRIBUTION.md)  
 [License](/addons/maaacks_scene_loader/LICENSE.txt)  
