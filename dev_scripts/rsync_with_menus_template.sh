@@ -31,8 +31,8 @@ echo $src_dir
 rsync -av --existing "$src_dir/" "$dest_dir"
 
 # Define strings to replace
-finds=("menus_template" "Menus Template" "Menus-Template" "menus-template")
-replaces=("scene_loader" "Scene Loader" "Scene-Loader" "scene-loader")
+finds=("menus_template" "Menus Template" "MenusTemplate" "Menus-Template" "menus-template")
+replaces=("scene_loader" "Scene Loader" "SceneLoader" "Scene-Loader" "scene-loader")
 
 # Checks for strings and replaces them
 for ((i=0; i<${#finds[@]}; i++)); do
