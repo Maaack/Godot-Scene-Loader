@@ -1,5 +1,9 @@
 @tool
+class_name MaaacksSceneLoaderPlugin
 extends EditorPlugin
+
+const APIClient = preload("res://addons/maaacks_scene_loader/utilities/api_client.gd")
+const DownloadAndExtract = preload("res://addons/maaacks_scene_loader/utilities/download_and_extract.gd")
 
 const PLUGIN_NAME = "Maaack's Scene Loader"
 const PROJECT_SETTINGS_PATH = "maaacks_scene_loader/"
