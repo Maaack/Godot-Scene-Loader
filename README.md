@@ -67,6 +67,7 @@ Change scenes in your project using paths by calling `SceneLoader.load_scene(_pa
 
 ### More Documentation
 
+[Loading Scenes](/addons/maaacks_scene_loader/docs/LoadingScenes.md)  
 [Automatic Updating](/addons/maaacks_scene_loader/docs/AutomaticUpdating.md)  
 
 ---

@@ -33,6 +33,8 @@ const PLUGIN_TEMP_ZIP_PATH := "res://%s_%s_update.zip"
 @onready var _success_dialog : AcceptDialog = $SuccessDialog
 @onready var _release_label : RichTextLabel = %ReleaseLabel
 @onready var _update_label : Label = %UpdateLabel
+@onready var _warning_message_button : LinkButton = %WarningMessageButton
+@onready var _warning_message_label : Label = %WarningMessageLabel
 @onready var _release_notes_button : LinkButton = %ReleaseNotesButton
 @onready var _release_notes_panel : Panel = %ReleaseNotesPanel
 @onready var _stage_label : Label = %StageLabel
@@ -124,6 +126,10 @@ func _on_update_confirmation_dialog_confirmed() -> void:
 	_download_and_extract_node.run()
 	_installing_dialog.show()
 
+func _on_warning_message_button_pressed():
+	_warning_message_label.show()
+	_warning_message_button.hide()
+
 func _on_release_notes_button_pressed() -> void:
 	_release_notes_panel.show()
 	_release_notes_button.hide()
@@ -144,13 +150,13 @@ func _process(_delta : float) -> void:
 	if _installing_dialog.visible:
 		_progress_bar.value = _download_and_extract_node.get_progress()
 		match _download_and_extract_node.stage:
-			DownloadAndExtract.Stage.DOWNLOAD:
+			DownloadAndExtract.DownloadAndExtractStage.DOWNLOAD:
 				_stage_label.text = "Downloading..."
-			DownloadAndExtract.Stage.SAVE:
+			DownloadAndExtract.DownloadAndExtractStage.SAVE:
 				_stage_label.text = "Saving..."
-			DownloadAndExtract.Stage.EXTRACT:
+			DownloadAndExtract.DownloadAndExtractStage.EXTRACT:
 				_stage_label.text = "Extracting..."
-			DownloadAndExtract.Stage.DELETE:
+			DownloadAndExtract.DownloadAndExtractStage.DELETE:
 				_stage_label.text = "Cleaning up..."
-			DownloadAndExtract.Stage.NONE:
+			DownloadAndExtract.DownloadAndExtractStage.NONE:
 				_installing_dialog.hide()
