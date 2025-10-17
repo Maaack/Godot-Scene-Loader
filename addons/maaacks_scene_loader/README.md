@@ -1,5 +1,5 @@
 # Godot Scene Loader
-For Godot 4.2
+For Godot 4.4 (4.3+ compatible)
 
 A scene loader with loading screen, progress bar, and error handling.
 
@@ -7,19 +7,26 @@ A scene loader with loading screen, progress bar, and error handling.
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
 
 
-![Main Menu](/addons/maaacks_scene_loader/media/Screenshot-1-1.png)  
-![Key Rebinding](/addons/maaacks_scene_loader/media/Screenshot-1-2.png)  
-![Audio Controls](/addons/maaacks_scene_loader/media/Screenshot-1-3.png)  
-![Credits Screen](/addons/maaacks_scene_loader/media/Screenshot-1-4.png)  
+![Loading 33%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-1.png)  
+![Still Loading 69%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-3.png)  
+![Stalled Loaded 69%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-4.png)  
+[More Screenshots](/addons/maaacks_scene_loader/docs/Screenshots.md)  
 
-## Use Case
-For adding a loading screen with a progress bar in between your scene changes.
+## Objective
+
+For quickly adding a loading screen with a progress bar in-between your scene changes.
+
+[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users, especially those new to Godot.  
 
 ## Features
 
 * Asynchronous resource loading.
 * Loading screen with progress bar.
 * Error handling.
+
+### Extras or Components
+
+Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) or other options from the [plugin suite](/addons/maaacks_scene_loader/docs/PluginSuite.md).  
 
 
 ### How it Works
@@ -30,7 +37,7 @@ For adding a loading screen with a progress bar in between your scene changes.
 ### Godot Asset Library
 This package is available as a plugin, meaning it can be added to an existing project. 
 
-![Package Icon](/addons/maaacks_scene_loader/media/SceneLoader-Icon-black-transparent-256x256.png)  
+![Package Icon](/addons/maaacks_scene_loader/media/scene_loader-icon-black-transparent-256x256.png)  
 
 When editing an existing project:
 
@@ -53,17 +60,35 @@ When editing an existing project:
 4.  Open/Reload the project.  
 5.  Enable the plugin from the Project Settings > Plugins tab.  
 
-#### Extras
-
-Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template).  
 
 ## Usage
 
 Change scenes in your project using paths by calling `SceneLoader.load_scene(_path_to_scene_)`.
-   
 
+### More Documentation
+
+[Loading Scenes](/addons/maaacks_scene_loader/docs/LoadingScenes.md)  
+[Automatic Updating](/addons/maaacks_scene_loader/docs/AutomaticUpdating.md)  
+
+---
+
+## Featured Games
+
+| Spud Customs | Rent Seek Kill  | A Darkness Like Gravity  |  
+| :-------:| :-------: | :-------: |
+![Spud Customs](/addons/maaacks_scene_loader/media/thumbnail-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_scene_loader/media/thumbnail-game-a-darkness-like-gravity.png)  |
+[Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |  [Play on itch.io](https://maaack.itch.io/a-darkness-like-gravity)  |
+
+
+[All Shared Games](/addons/maaacks_scene_loader/docs/GamesMade.md)  
+
+
+## Community
+
+Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
+ 
 
 ## Links
-[Attribution](ATTRIBUTION.md)  
-[License](LICENSE.txt)  
-
+[Attribution](/addons/maaacks_scene_loader/ATTRIBUTION.md)  
+[License](/addons/maaacks_scene_loader/LICENSE.txt)  
+[Godot Asset Library](https://godotengine.org/asset-library/asset/2896)  
