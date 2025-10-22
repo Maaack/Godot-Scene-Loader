@@ -84,8 +84,9 @@ func change_scene_to_loading_screen() -> void:
 	if err:
 		push_error("failed to change scenes to loading screen: %d" % err)
 		get_tree().quit()
+	await get_tree().scene_changed
 	_on_loading_screen = true
-	emit_signal("scene_changed_to_loading")
+	scene_changed_to_loading.emit.call_deferred()
 
 func set_loading_screen(value : String) -> void:
 	loading_screen_path = value
@@ -129,10 +130,15 @@ func load_scene(scene_path : String, in_background : bool = false) -> void:
 		change_scene_to_loading_screen()
 
 func load_scene_to_tree(scene_path : String, in_background : bool = false) -> void:
-	if debug_enabled:
+	if scene_path == null or scene_path.is_empty():
+		push_error("no path given to load")
 		return
+
 	if not in_background and _check_loading_screen():
+		_scene_path = scene_path
 		change_scene_to_loading_screen()
+		await scene_changed_to_loading
+
 	load_scene.call_deferred(scene_path, true)
 	await scene_loaded
 	add_resource_to_tree()
