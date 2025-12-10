@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-SceneLoader="*res://addons/maaacks_scene_loader/base/scenes/autoloads/scene_loader.tscn"
+SceneLoader="*res://addons/maaacks_scene_loader/base/nodes/autoloads/scene_loader/scene_loader.tscn"
 
 [display]
 
