@@ -5,27 +5,34 @@ If you have a game you'd like to share, join the [Discord server](https://discor
 
 ## Featured
 
-| Spud Customs | Rent Seek Kill  | A Darkness Like Gravity  |  
+| Baking Godium | Spud Customs | Rent Seek Kill |  
 | :-------:| :-------: | :-------: |
-![Spud Customs](/addons/maaacks_scene_loader/media/thumbnail-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_scene_loader/media/thumbnail-game-a-darkness-like-gravity.png)  |
-[Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |  [Play on itch.io](https://maaack.itch.io/a-darkness-like-gravity)  |
+| ![Baking Godium](/addons/maaacks_scene_loader/media/thumbnail-game-baking-godium.png) | ![Spud Customs](/addons/maaacks_scene_loader/media/thumbnail-game-spud-customs.png) | ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png) |
+|  [Play on itch.io](https://maaack.itch.io/baking-godium) | [Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |
 
 
 ## All Shared
-### 2025
-https://schinken.itch.io/low-ink  
-https://maaack.itch.io/furnace-in-the-archive  
-https://plexsoup.itch.io/factoriohno  
-https://maaack.itch.io/dungeon-fantasy-fashion-show  
-https://maaack.itch.io/absurd-herd  
-https://maaack.itch.io/indys-expedition-2  
-https://baconeggsrl.itch.io/sprouts-journey  
-https://parallaxrat.itch.io/no-mans-land  
-https://store.steampowered.com/app/3751730/Loan_Shark/  
-https://dragonruler1000.itch.io/beep  
-https://zunarii.itch.io/loopinball  
-https://redspine.itch.io/gmtk-game-jam-2025  
+### 2025  
+https://sevadusk.itch.io/liferoot  
+https://maaack.itch.io/baking-godium  
+https://baconeggsrl.itch.io/umbra-city  
+https://store.steampowered.com/app/3911550/Warp_Marked_Demo/  
+https://maaack.itch.io/kobo-expansion  
+https://keur-collectif.itch.io/heartfix-express-demo  
+https://spacecheese.itch.io/cia  
 https://acul4321.itch.io/bleep  
+https://redspine.itch.io/gmtk-game-jam-2025  
+https://zunarii.itch.io/loopinball  
+https://dragonruler1000.itch.io/beep  
+https://store.steampowered.com/app/3751730/Loan_Shark/  
+https://parallaxrat.itch.io/no-mans-land  
+https://baconeggsrl.itch.io/sprouts-journey  
+https://maaack.itch.io/indys-expedition-2  
+https://maaack.itch.io/absurd-herd  
+https://maaack.itch.io/dungeon-fantasy-fashion-show  
+https://plexsoup.itch.io/factoriohno  
+https://maaack.itch.io/furnace-in-the-archive  
+https://schinken.itch.io/low-ink  
 
 ### 2024
 https://store.steampowered.com/app/3291880/Spud_Customs/ (Source: https://github.com/Lost-Rabbit-Digital/SpudCustoms)  
