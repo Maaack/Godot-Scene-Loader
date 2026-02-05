@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx6q4annh5jjj"]
+[gd_scene format=3 uid="uid://bx6q4annh5jjj"]
 
 [ext_resource type="Script" uid="uid://p5ciqg1s30ig" path="res://addons/maaacks_scene_loader/installer/check_plugin_version.gd" id="1_aqelj"]
 [ext_resource type="PackedScene" uid="uid://dt53wnqf2ho36" path="res://addons/maaacks_scene_loader/utilities/api_client.tscn" id="2_5myc0"]
 
-[node name="CheckPluginVersion" type="Node"]
+[node name="CheckPluginVersion" type="Node" unique_id=1424997750]
 script = ExtResource("1_aqelj")
 plugin_directory = "maaacks_scene_loader"
 plugin_github_url = "https://github.com/Maaack/Godot-Scene-Loader"
 
-[node name="APIClient" parent="." instance=ExtResource("2_5myc0")]
+[node name="APIClient" parent="." unique_id=1982606872 instance=ExtResource("2_5myc0")]
 api_url = "https://api.github.com/repos/Maaack/Godot-Scene-Loader/releases"
 request_method = 0
 
