@@ -1,5 +1,5 @@
 # Godot Scene Loader
-For Godot 4.5 (4.3+ compatible)
+For Godot 4.6 (4.3+ compatible)
 
 A scene loader with loading screen, progress bar, and error handling.
 
