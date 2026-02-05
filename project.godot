@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Scene Loader"
-config/features=PackedStringArray("4.5")
+config/features=PackedStringArray("4.6")
 config/icon="res://icon.png"
 
 [autoload]
