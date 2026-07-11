@@ -35,7 +35,7 @@ func _open_check_plugin_version() -> void:
 	check_version_instance.new_version_detected.connect(_add_update_plugin_tool_option)
 	add_child(check_version_instance)
 
-func _open_update_plugin() -> void:
+func open_update_plugin() -> void:
 	var update_plugin_scene : PackedScene = load(get_plugin_path() + "installer/update_plugin.tscn")
 	var update_plugin_instance : Node = update_plugin_scene.instantiate()
 	update_plugin_instance.auto_start = true
@@ -44,7 +44,7 @@ func _open_update_plugin() -> void:
 
 func _add_update_plugin_tool_option(new_version : String) -> void:
 	update_plugin_tool_string = "Update %s to v%s..." % [get_plugin_name(), new_version]
-	add_tool_menu_item(update_plugin_tool_string, _open_update_plugin)
+	add_tool_menu_item(update_plugin_tool_string, open_update_plugin)
 
 func _remove_update_plugin_tool_option() -> void:
 	if update_plugin_tool_string.is_empty(): return
@@ -58,7 +58,7 @@ func _disable_plugin():
 	remove_autoload_singleton("SceneLoader")
 
 func _enter_tree() -> void:
-	_open_check_plugin_version()
+	open_check_plugin_version()
 
 func _exit_tree() -> void:
 	_remove_update_plugin_tool_option()
