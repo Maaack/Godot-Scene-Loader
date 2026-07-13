@@ -58,7 +58,7 @@ func _disable_plugin():
 	remove_autoload_singleton("SceneLoader")
 
 func _enter_tree() -> void:
-	open_check_plugin_version()
+	_open_check_plugin_version()
 
 func _exit_tree() -> void:
 	_remove_update_plugin_tool_option()
