@@ -1,5 +1,5 @@
 # Godot Scene Loader
-For Godot 4.5 (4.3+ compatible)
+For Godot 4.7 (4.3+ compatible)
 
 A scene loader with loading screen, progress bar, and error handling.
 
@@ -34,14 +34,14 @@ Users that want additional features can try [Maaack's Game Template](https://git
 
 ## Installation
 
-### Godot Asset Library
+### Godot Asset Store & Library
 This package is available as a plugin, meaning it can be added to an existing project. 
 
 ![Package Icon](/addons/maaacks_scene_loader/media/scene_loader-icon-black-transparent-256x256.png)  
 
 When editing an existing project:
 
-1.  Go to the `AssetLib` tab.
+1.  Go to the `Asset Store` tab.
 2.  Search for "Maaack's Scene Loader".
 3.  Click on the result to open the plugin details.
 4.  Click to Download.
@@ -74,10 +74,10 @@ Change scenes in your project using paths by calling `SceneLoader.load_scene(_pa
 
 ## Featured Games
 
-| Baking Godium | Spud Customs | Rent Seek Kill |  
+| HeartFix Express | Baking Godium | Rent Seek Kill |  
 | :-------:| :-------: | :-------: |
-| ![Baking Godium](/addons/maaacks_scene_loader/media/thumbnail-game-baking-godium.png) | ![Spud Customs](/addons/maaacks_scene_loader/media/thumbnail-game-spud-customs.png) | ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png) |
-|  [Play on itch.io](https://maaack.itch.io/baking-godium) | [Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |
+| ![HeartFix Express](/addons/maaacks_scene_loader/media/thumbnail-game-heartfix-express.png) | ![Baking Godium](/addons/maaacks_scene_loader/media/thumbnail-game-baking-godium.png) | ![Rent-Seek-Kill](/addons/maaacks_scene_loader/media/thumbnail-game-rent-seek-kill.png) |
+|  [Find on Steam](https://store.steampowered.com/app/3983290/HeartFix_Express_Demo/)  | [Play on itch.io](https://maaack.itch.io/baking-godium) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |
 
 
 [All Shared Games](/addons/maaacks_scene_loader/docs/GamesMade.md)  
@@ -91,4 +91,5 @@ Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work wi
 ## Links
 [Attribution](/addons/maaacks_scene_loader/ATTRIBUTION.md)  
 [License](/addons/maaacks_scene_loader/LICENSE.txt)  
+[Godot Asset Store](https://store.godotengine.org/asset/maaack/maaacks-scene-loader/)  
 [Godot Asset Library](https://godotengine.org/asset-library/asset/2896)  
