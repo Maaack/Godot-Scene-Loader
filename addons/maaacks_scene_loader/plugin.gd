@@ -5,6 +5,7 @@ extends EditorPlugin
 const PLUGIN_PATH = "res://addons/maaacks_scene_loader/"
 const PLUGIN_NAME = "Maaack's Scene Loader"
 const PROJECT_SETTINGS_PATH = "maaacks_scene_loader/"
+const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Scene-Loader"
 
 const APIClient = preload(PLUGIN_PATH + "utilities/api_client.gd")
 const DownloadAndExtract = preload(PLUGIN_PATH + "utilities/download_and_extract.gd")
@@ -30,7 +31,7 @@ func _disable_plugin():
 
 func _add_to_auto_update_list() -> void:
 	var plugin_repos:Dictionary = ProjectSettings.get_setting("plugin_updater/plugins", {})
-	plugin_repos[get_plugin_path()] = "https://github.com/Maaack/Godot-Scene-Loader"
+	plugin_repos[get_plugin_path()] = PLUGIN_REPO_URL
 	ProjectSettings.set_setting("plugin_updater/plugins", plugin_repos)
 
 func _remove_from_auto_update_list() -> void:
