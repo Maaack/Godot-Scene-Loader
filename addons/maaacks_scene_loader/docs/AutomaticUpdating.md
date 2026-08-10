@@ -21,7 +21,7 @@ After extracting finishes, a window should appear confirming a successful update
 
 You can disable the automatic update checks entirely by disabling the Plugin Updater in Project Settings.
 
-To disable automatic updates by plugin, go into the Project Settings, and remove the entries in the `plugin_updater/plugins` setting (ex. `"maaacks_scene_loader"`). You can then close the window.
+To disable automatic updates by plugin, go into the Project Settings, and remove the entries in the `plugin_updater/plugins` setting (ex. `"res://addons/maaacks_scene_loader/"`). You can then close the window.
 
 ## Issues
 
