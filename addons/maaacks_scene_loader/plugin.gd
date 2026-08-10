@@ -11,7 +11,7 @@ static func get_plugin_name() -> String:
 	return PLUGIN_NAME
 
 func get_plugin_path() -> String:
-	return get_script().resource_path.get_base_dir()
+	return get_script().resource_path.get_base_dir() + "/"
 
 func get_scene_loader_path() -> String:
 	return get_plugin_path() + SCENE_LOADER_RELATIVE_PATH
