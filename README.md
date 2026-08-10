@@ -1,11 +1,18 @@
 # Godot Scene Loader
-For Godot 4.7 (4.3+ compatible)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Maaack/Godot-Scene-Loader)
+![GitHub Release Date](https://img.shields.io/github/release-date/Maaack/Godot-Scene-Loader)
+[![Discord members](https://img.shields.io/discord/772191827570720798.svg?label=&logo=discord&logoColor=ffffff)](https://discord.gg/AyZrJh5AMp)  
 
 A scene loader with loading screen, progress bar, and error handling.
+
+For Godot 4.7 (4.3+ compatible)
 
 [Example on itch.io](https://maaack.itch.io/godot-game-template)  
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
 
+[Featured Games](#featured-games)  
+
+### Screenshots
 
 ![Loading 33%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-1.png)  
 ![Still Loading 69%](/addons/maaacks_scene_loader/media/screenshot-6-loading-screen-3.png)  
@@ -16,7 +23,7 @@ _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Tem
 
 For quickly adding a loading screen with a progress bar in-between your scene changes.
 
-[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users, especially those new to Godot.  
+[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users.  
 
 ## Features
 
@@ -85,8 +92,8 @@ Change scenes in your project using paths by calling `SceneLoader.load_scene(_pa
 
 ## Community
 
-Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
- 
+Join the [Discord server](https://discord.gg/AyZrJh5AMp) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
+
 
 ## Links
 [Attribution](/addons/maaacks_scene_loader/ATTRIBUTION.md)  
