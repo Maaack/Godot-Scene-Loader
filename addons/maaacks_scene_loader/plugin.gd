@@ -2,7 +2,6 @@
 class_name MaaacksSceneLoaderPlugin
 extends EditorPlugin
 
-const PLUGIN_PATH = "res://addons/maaacks_scene_loader/"
 const PLUGIN_NAME = "Maaack's Scene Loader"
 const PROJECT_SETTINGS_PATH = "maaacks_scene_loader/"
 const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Scene-Loader"
