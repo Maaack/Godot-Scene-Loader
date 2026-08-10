@@ -6,13 +6,7 @@ const PLUGIN_PATH = "res://addons/maaacks_scene_loader/"
 const PLUGIN_NAME = "Maaack's Scene Loader"
 const PROJECT_SETTINGS_PATH = "maaacks_scene_loader/"
 const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Scene-Loader"
-
-const APIClient = preload(PLUGIN_PATH + "utilities/api_client.gd")
-const DownloadAndExtract = preload(PLUGIN_PATH + "utilities/download_and_extract.gd")
-
 const SCENE_LOADER_RELATIVE_PATH = "base/nodes/autoloads/scene_loader/scene_loader.tscn"
-
-var update_plugin_tool_string : String
 
 static func get_plugin_name() -> String:
 	return PLUGIN_NAME
