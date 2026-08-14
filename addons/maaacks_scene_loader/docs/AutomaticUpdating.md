@@ -7,7 +7,7 @@ This plugin supports automatic updating with the *[Plugin Updater](https://githu
 > [!IMPORTANT]  
 > Save the state of the project, and close all open scenes and scripts.
 
-If an update is available, then the option to update will be available at **Project > Tools > Update Plugins... > Maaack's Scene Loader to v...**.
+If an update is available, then the option to update will be listed at **Project > Tools > Update Plugins... > Maaack's Scene Loader to v...**.
 
 Selecting the option will open a window, confirming the choice to update to the latest release. Select **OK**.
 
