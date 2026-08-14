@@ -17,14 +17,14 @@ For quickly adding a loading screen with a progress bar in-between your scene ch
 
 ### Extras or Components
 
-Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) or other options from the [plugin suite](/addons/maaacks_scene_loader/docs/PluginSuite.md).  
+Users that want additional features can try *[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template)* or other options from the [plugin suite](/addons/maaacks_scene_loader/docs/PluginSuite.md).  
 
 ## Installation
 
-### Godot Asset Store & Library
-This package is available as a plugin, meaning it can be added to an existing project. 
+*Maaack's Scene Loader* is available in both the *Godot Asset Library* and the *Godot Asset Store*. It is available as a plugin, meaning it can be added to an existing project. 
 
-When editing an existing project:
+### Existing Project
+While editing a project in *Godot*:
 
 1.  Go to the **Asset Store** tab.
 2.  Search for "Maaack's Scene Loader".
