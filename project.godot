@@ -25,7 +25,7 @@ window/size/viewport_height=720
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/maaacks_scene_loader/plugin.cfg")
+enabled=PackedStringArray("res://addons/maaacks_scene_loader/plugin.cfg", "res://addons/plugin_updater/plugin.cfg", "res://addons/script-ide/plugin.cfg")
 
 [gui]
 
@@ -67,3 +67,9 @@ disable_update_check=false
 [physics]
 
 common/enable_pause_aware_picking=true
+
+[plugin_updater]
+
+plugins={
+"res://addons/maaacks_scene_loader/": "https://github.com/Maaack/Godot-Scene-Loader"
+}

@@ -16,12 +16,6 @@ func get_plugin_path() -> String:
 func get_scene_loader_path() -> String:
 	return get_plugin_path() + SCENE_LOADER_RELATIVE_PATH
 
-func _enable_plugin():
-	add_autoload_singleton("SceneLoader", get_scene_loader_path())
-
-func _disable_plugin():
-	remove_autoload_singleton("SceneLoader")
-
 func _add_to_auto_update_list() -> void:
 	var plugin_repos:Dictionary = ProjectSettings.get_setting("plugin_updater/plugins", {})
 	plugin_repos[get_plugin_path()] = PLUGIN_REPO_URL
@@ -32,8 +26,10 @@ func _remove_from_auto_update_list() -> void:
 	plugin_repos.erase(get_plugin_path())
 	ProjectSettings.set_setting("plugin_updater/plugins", plugin_repos)
 
-func _enter_tree() -> void:
+func _enable_plugin():
 	_add_to_auto_update_list()
+	add_autoload_singleton("SceneLoader", get_scene_loader_path())
 
-func _exit_tree() -> void:
+func _disable_plugin():
 	_remove_from_auto_update_list()
+	remove_autoload_singleton("SceneLoader")
