@@ -25,7 +25,7 @@ func get_plugin_path() -> String:
 func get_scene_loader_path() -> String:
 	return get_plugin_path() + SCENE_LOADER_RELATIVE_PATH
 
-func _set_project_paths(target_path : String, overwrite : bool = true) -> void:
+func set_project_paths(target_path : String, overwrite : bool = true) -> void:
 	for key in SCENE_PATHS:
 		if (not overwrite) and ProjectSettings.get_setting(PROJECT_SETTINGS_PATH + key) != null:
 			continue
@@ -46,7 +46,7 @@ func _remove_from_auto_update_list() -> void:
 	ProjectSettings.set_setting("plugin_updater/plugins", plugin_repos)
 
 func _enable_plugin():
-	_set_project_paths(get_plugin_path())
+	set_project_paths(get_plugin_path())
 	_add_to_auto_update_list()
 	add_autoload_singleton("SceneLoader", get_scene_loader_path())
 
