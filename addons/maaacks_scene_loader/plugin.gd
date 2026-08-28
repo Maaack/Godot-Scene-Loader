@@ -6,13 +6,18 @@ const PLUGIN_NAME = "Maaack's Scene Loader"
 const PROJECT_SETTINGS_PATH = "maaacks_scene_loader/"
 const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Scene-Loader"
 const SCENE_LOADER_RELATIVE_PATH = "base/nodes/autoloads/scene_loader/scene_loader.tscn"
-const LOADING_SCENE_RELATIVE_PATH = "base/nodes/loading_screen/loading_screen.tscn"
+const LOADING_SCREEN_SCENE_RELATIVE_PATH = "base/nodes/loading_screen/loading_screen.tscn"
 const LOADING_SCENE_PATH_KEY = "loading_scene_path"
 const SCENE_PATHS : Dictionary[String, String] = {
-	LOADING_SCENE_PATH_KEY : LOADING_SCENE_RELATIVE_PATH,
+	LOADING_SCENE_PATH_KEY : LOADING_SCREEN_SCENE_RELATIVE_PATH,
 }
 static func get_plugin_name() -> String:
 	return PLUGIN_NAME
+
+static func get_loading_scene_path(override_path : String = "") -> String:
+	if (not override_path.is_empty()) and FileAccess.file_exists(override_path):
+		return override_path
+	return ProjectSettings.get_setting(PROJECT_SETTINGS_PATH + LOADING_SCENE_PATH_KEY, override_path)
 
 func get_plugin_path() -> String:
 	return get_script().resource_path.get_base_dir() + "/"
