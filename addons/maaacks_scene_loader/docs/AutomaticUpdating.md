@@ -16,6 +16,7 @@ A window will open and show progress through downloading, saving, and extracting
 This effectively deletes the current `addons/maaacks_scene_loader/` folder and replaces it with a new one. Nothing outside of `addons/` should be affected.
 
 After extracting finishes, another window will open confirming a successful update.
+
 ## Disabling Automatic Checking
 
 You can disable the automatic update checks entirely by disabling *Plugin Updater* in the **Project > Project Settings > Plugins** tab.
