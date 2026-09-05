@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://dvp3b2tdsbtmo"]
+[gd_scene format=3 uid="uid://brncaqu0i4q6g"]
 
-[ext_resource type="PackedScene" uid="uid://bylvh6psebf7h" path="res://addons/maaacks_scene_loader/base/nodes/loading_screen/loading_screen.tscn" id="1_4k0mc"]
-[ext_resource type="Script" uid="uid://ymuduuk7envr" path="res://addons/maaacks_scene_loader/examples/scenes/loading_screens/loading_screen_with_shader_caching.gd" id="2_3xu6h"]
+[ext_resource type="PackedScene" uid="uid://bylvh6psebf7h" path="res://addons/maaacks_scene_loader/base/nodes/loading_screen/loading_screen.tscn" id="1_w75yk"]
+[ext_resource type="Script" uid="uid://doafxhd610wyl" path="res://addons/maaacks_scene_loader/examples/scenes/loading_screens/loading_screen_with_shader_caching.gd" id="2_nq8wu"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_klnwy"]
 
-[node name="LoadingScreen" unique_id=1866533347 instance=ExtResource("1_4k0mc")]
-script = ExtResource("2_3xu6h")
+[node name="LoadingScreen" unique_id=1866533347 instance=ExtResource("1_w75yk")]
+script = ExtResource("2_nq8wu")
 _spatial_shader_material_dir = ""
 _cache_shaders_scene = ""
 _mesh = SubResource("QuadMesh_klnwy")
