@@ -19,6 +19,10 @@ config/icon="res://icon.png"
 
 SceneLoader="*res://addons/maaacks_scene_loader/base/nodes/autoloads/scene_loader/scene_loader.tscn"
 
+[clean_copy_examples]
+
+examples_paths=Array[String](["res://addons/maaacks_scene_loader/examples/"])
+
 [display]
 
 window/size/viewport_width=1280
