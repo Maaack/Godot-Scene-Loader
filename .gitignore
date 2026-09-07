@@ -29,3 +29,4 @@ Exports/
 # Plugin specific
 addons/script-ide
 addons/plugin_updater
+addons/clean_copy_examples
