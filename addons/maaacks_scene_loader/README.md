@@ -15,6 +15,8 @@ For *Godot 4.7* (4.3+ compatible)
 
 For quickly adding a loading screen with a progress bar in-between your scene changes.
 
+This template was originally made for Godot Wild Jam, and shares a no AI/LLM-gen policy. Please open an [issue](https://github.com/Maaack/Godot-Game-Template/issues) if there is a violation.  
+
 ### Extras or Components
 
 Users that want additional features can try *[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template)* or other options from the [plugin suite](/addons/maaacks_scene_loader/docs/PluginSuite.md).  
